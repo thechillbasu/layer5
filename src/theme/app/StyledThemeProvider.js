@@ -1,13 +1,19 @@
+//uses isDark state to choose styled-component theme (in themeStyles.js)
+//and use ThemeProvider to allow all styled components access to values via props.theme
+
 import React, { useContext } from "react";
 import { ThemeProvider } from "styled-components";
 import { ThemeManagerContext } from "./ThemeManager";
 
+// Safe check for browser environment
 const isBrowser = typeof window !== "undefined";
 
 export const StyledThemeProvider = (props) => {
   const { children, darkTheme, lightTheme } = props;
   const { isDark, didLoad } = useContext(ThemeManagerContext);
 
+  // For SSR, we need to provide a consistent theme initially
+  // This ensures the server and client render the same thing initially
   const currentTheme = isDark ? darkTheme : lightTheme;
   const theme = {
     ...(didLoad ? currentTheme : transformTheme(currentTheme)),
@@ -20,7 +26,7 @@ export const StyledThemeProvider = (props) => {
   );
 };
 
-const transformTheme = (theme) => {
+// Maps JS theme object to raw CSS variables (--key) initialized via onRenderBody.const transformTheme = (theme) => {
   const newTheme = {};
   Object.keys(theme).forEach((key) => {
     const value = theme[key];
