@@ -41,17 +41,17 @@ export const content = [
   { id: 29, link: "/projects/sistent/components/box/guidance", text: "Box" },
   { id: 30, link: "/projects/sistent/components/box/code", text: "Box" },
 
-  { id: 31, link: "/projects/sistent/components/card", text: "Card" },
-  { id: 32, link: "/projects/sistent/components/card/guidance", text: "Card" },
-  { id: 33, link: "/projects/sistent/components/card/code", text: "Card" },
+  { id: 31, link: "/projects/sistent/components/button", text: "Button" },
+  { id: 32, link: "/projects/sistent/components/button/guidance", text: "Button" },
+  { id: 33, link: "/projects/sistent/components/button/code", text: "Button" },
 
-  { id: 34, link: "/projects/sistent/components/button", text: "Button" },
-  { id: 35, link: "/projects/sistent/components/button/guidance", text: "Button" },
-  { id: 36, link: "/projects/sistent/components/button/code", text: "Button" },
+  { id: 34, link: "/projects/sistent/components/button-group", text: "Button Group" },
+  { id: 35, link: "/projects/sistent/components/button-group/guidance", text: "Button Group" },
+  { id: 36, link: "/projects/sistent/components/button-group/code", text: "Button Group" },
 
-  { id: 37, link: "/projects/sistent/components/button-group", text: "Button Group" },
-  { id: 38, link: "/projects/sistent/components/button-group/guidance", text: "Button Group" },
-  { id: 39, link: "/projects/sistent/components/button-group/code", text: "Button Group" },
+  { id: 37, link: "/projects/sistent/components/card", text: "Card" },
+  { id: 38, link: "/projects/sistent/components/card/guidance", text: "Card" },
+  { id: 39, link: "/projects/sistent/components/card/code", text: "Card" },
 
   { id: 40, link: "/projects/sistent/components/chip", text: "Chip" },
   { id: 41, link: "/projects/sistent/components/chip/guidance", text: "Chip" },
