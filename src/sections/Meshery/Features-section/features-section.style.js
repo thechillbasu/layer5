@@ -108,7 +108,7 @@ const FeaturesSectionWrapper = styled.section`
 			}
 		}
 
-		.smp-section-caraousel {
+		.smp-section-carousel {
 			.slick-slider {
 			    max-height: 520px;
 				.slick-list {
@@ -166,7 +166,7 @@ const FeaturesSectionWrapper = styled.section`
 	}
 
 	@media screen and (max-width: 1600px) {
-		.smp-section .smp-section-caraousel .slick-slider {
+		.smp-section .smp-section-carousel .slick-slider {
 			.slick-list {
 				max-width: 38rem;
 			}
@@ -197,7 +197,7 @@ const FeaturesSectionWrapper = styled.section`
 				}
 			}
 
-			.smp-section-caraousel .slick-slider {
+			.smp-section-carousel .slick-slider {
 				.slick-list {
 					max-width: 80%;
 					margin: 2rem auto;
@@ -213,7 +213,7 @@ const FeaturesSectionWrapper = styled.section`
 	@media screen and (max-width: 960px) {
 		padding-bottom: 0rem;
 		margin-bottom: 4rem;
-		.smp-section .smp-section-caraousel .slick-slider .slick-list {
+		.smp-section .smp-section-carousel .slick-slider .slick-list {
 			.slick-slide {
 				img {
 					max-height: 16rem;
@@ -226,7 +226,7 @@ const FeaturesSectionWrapper = styled.section`
 		.smp-section {
 			max-width: 95%;
 
-			.smp-section-caraousel .slick-slider {
+			.smp-section-carousel .slick-slider {
 				.slick-list {
 					max-width: 85%;
 					margin: 2rem 0;
@@ -247,7 +247,7 @@ const FeaturesSectionWrapper = styled.section`
 		.smp-section {
 			max-width: 95%;
 
-			.smp-section-caraousel .slick-slider {
+			.smp-section-carousel .slick-slider {
 				.slick-list {
 					max-width: 80%;
 					.slick-slide {

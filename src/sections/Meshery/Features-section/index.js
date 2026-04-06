@@ -69,7 +69,7 @@ const FeaturesSection = () => {
                 through intuitive visual designer and operator.
               </p>
             </Col>
-            <Col $xs={12} $xl={8} className="smp-section-caraousel">
+            <Col $xs={12} $xl={8} className="smp-section-carousel">
               <Slider {...settings}>
                 <div>
                   <img src={Slide1} alt="Slide 1" />
