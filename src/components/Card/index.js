@@ -13,7 +13,6 @@ const Card = ({
   fetchpriority = "auto",
 }) => {
   const { isDark } = useStyledDarkMode();
-
   return (
     <CardWrapper fixed={!!frontmatter.abstract}>
       <div className="post-block">
@@ -25,7 +24,7 @@ const Card = ({
               frontmatter.thumbnail.publicURL
               ? frontmatter.darkthumbnail
               : frontmatter.thumbnail)}
-            imgStyle={{ objectFit: "contain" }}
+            imgStyle={{ objectFit: "cover" }}
             loading={loading}
             fetchpriority={fetchpriority}
             alt={frontmatter.title}
