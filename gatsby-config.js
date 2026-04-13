@@ -45,7 +45,9 @@ module.exports = {
       "Expect more from your infrastructure. Cloud native, open source software for your internal development platforms, your DevOps, platform engineering and site reliability engineering teams. Less finger-pointing and more collaborating. Allowing developers to focus on business logic, not infrastructure concerns. Empowering operators to confidently run modern infrastructure.",
     author: "Layer5 Authors",
     permalink: siteRootUrl,
-    siteUrl: siteOrigin,
+    // Use the full public root (origin + pathPrefix) so GitHub Pages project sites,
+    // PR previews, and feeds resolve URLs under the correct base path.
+    siteUrl: siteRootUrl,
     image: "/images/layer5-gradient.webp",
     twitterUsername: "@layer5",
   },

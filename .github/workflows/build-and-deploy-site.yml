@@ -37,9 +37,26 @@ jobs:
       - name: Install dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
 
+      # GitHub project pages are served from https://<owner>.github.io/<repo>/.
+      # Gatsby must use pathPrefix + `gatsby build --prefix-paths` or scripts/CSS load from / and break.
+      # User/organization sites use a repo named <owner>.github.io and are served from the domain root.
       - name: Build site
+        env:
+          GITHUB_PAGES_ORIGIN: ${{ vars.GITHUB_PAGES_ORIGIN }}
         run: |
-          npm run build
+          owner="${GITHUB_REPOSITORY%%/*}"
+          repo_name="${GITHUB_REPOSITORY#*/}"
+          pages_origin="${GITHUB_PAGES_ORIGIN:-https://${owner}.github.io}"
+          pages_origin="${pages_origin%/}"
+
+          if [[ "$repo_name" == "${owner}.github.io" ]]; then
+            export GATSBY_SITE_URL="$pages_origin"
+            npm run build
+          else
+            export GATSBY_SITE_URL="$pages_origin"
+            export PATH_PREFIX="$repo_name"
+            npm run build:gh-pages
+          fi
           touch public/.nojekyll
 
       - name: Deploy to GitHub Pages
