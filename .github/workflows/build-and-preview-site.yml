@@ -43,7 +43,7 @@ jobs:
       - name: Build PR preview
         if: github.event.action != 'closed'
         run: |
-          npm run build
+          PATH_PREFIX=layer5 npm run build:preview
 
           # Prevent indexing
           cat > public/robots.txt <<'EOF'

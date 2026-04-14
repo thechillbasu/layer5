@@ -30,7 +30,7 @@ jobs:
 
       - name: Build Gatsby site
         run: |
-          npm run build
+          PATH_PREFIX=layer5 npm run build:gh-pages
           touch public/.nojekyll
 
       - name: Deploy to GitHub Pages
