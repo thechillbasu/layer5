@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useLocation } from "@reach/router";
-import { useStaticQuery, graphql, withPrefix } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import FavIcon from "../assets/images/favicon.webp";
 
 export const useSiteMetadata = () => {
@@ -43,9 +43,7 @@ const SEO = ({
   const toAbsoluteUrl = (value) => {
     if (!value) return value;
     if (/^(?:[a-z]+:)?\/\//i.test(value)) return value;
-
-    const resolvedPath = withPrefix(value).replace(/^\//, "");
-    return new URL(resolvedPath, `${siteUrl}/`).toString();
+    return new URL(value.replace(/^\//, ""), `${siteUrl}/`).toString();
   };
   const seo = {
     title: title || defaultTitle,
