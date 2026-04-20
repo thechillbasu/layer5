@@ -87,8 +87,7 @@ export const CardWrapper = styled.div`
   }
 
   .post-content-block {
-    padding: 1rem 1rem 1.5rem 1rem;
-    padding-bottom: 1.5rem;
+    padding: 1rem 2rem 1.5rem 2rem;
     height: auto;
     min-height: 10rem;
     display: flex;
@@ -126,7 +125,7 @@ export const CardWrapper = styled.div`
     font-size: 1.4rem;
     font-weight: 400;
     margin: 0 0 0.5rem 0;
-    padding: 0 ;
+    padding: 0;
 
     white-space: normal !important;
     display: -webkit-box;
@@ -137,7 +136,6 @@ export const CardWrapper = styled.div`
   }
 
   .post-meta-block {
-    padding: 0 1rem;
     height: auto;
     display: flex;
     margin-bottom: 0.5rem;
@@ -169,7 +167,6 @@ export const CardWrapper = styled.div`
   }
 
   .readmore-btn-wrapper {
-    padding: 0 1rem;
     display: flex;
     justify-content: flex-start;
   }
