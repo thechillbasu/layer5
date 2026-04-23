@@ -132,7 +132,7 @@ const KanvasIntegrationsSection = () => {
         <div>
           <h2 id="kanvas-integrations">
             {Math.ceil(integrations.allMdx.totalCount / 10) * 10}+ Built-in
-            Cloud Native Integrations
+            Integrations
           </h2>
         </div>
         <div>
