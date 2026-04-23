@@ -145,10 +145,8 @@ const KanvasIntegrationsSection = () => {
         </div>
         <div>
           <p>
-            Integrate Kanvas with your cloud-native infrastructure — including
-            Kubernetes clusters, service meshes, CI/CD pipelines, and modern
-            application platforms — to streamline deployment and configuration
-            management.
+            Support for all of your Cloud Native Infrastructure and
+            Applications.
           </p>
         </div>
         <div>
