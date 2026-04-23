@@ -3,11 +3,16 @@
 > Community-first maintainer of CNCF projects and visual management tools. Orchestrating open infrastructure through cloud native patterns and collaborative design.
 
 ## Core Projects & Tooling
-- [Meshery](https://meshery.io): CNCF management plane for lifecycle and performance of 300+ cloud native integrations.
-- [Kanvas](https://layer5.io/kanvas): Collaborative infrastructure designer for multi-player cloud engineering.
+- [Meshery](https://layer5.io/cloud-native-management/meshery): CNCF management plane for lifecycle and performance of 300+ cloud native integrations.
+- [Kanvas](https://layer5.io/cloud-native-management/kanvas): Collaborative infrastructure designer for multi-player cloud engineering.
 - [Cloud Native Patterns](https://meshery.io/catalog): Curated library of best practices and patterns for cloud native infrastructure.
-- [Service Mesh Performance (SMP)](https://smp-spec.io): Vendor-neutral standard for measuring cloud native overhead.
+- [Service Mesh Performance (SMP)](https://layer5.io/projects/cloud-native-performance): Vendor-neutral standard for measuring cloud native overhead.
 - [Image Hub](https://layer5.io/projects/image-hub): Cloud native application registry for curated sample deployments.
+- [Nighthawk](https://layer5.io/projects/nighthawk): Multi-purpose distributed performance benchmarking tool.
+- [Sistent](https://layer5.io/projects/sistent): Open source design system for cloud native applications.
+- [Meshery Docker Extension](https://layer5.io/docker-extension-meshery): Docker Desktop extension for cloud native management.
+- [Layer5 Academy](https://layer5.io/learn/academy): Learning platform for cloud native technologies.
+- [Service Mesh Landscape](https://layer5.io/service-mesh-landscape): Comprehensive landscape of service mesh technologies.
 
 ## Technical Documentation
 - [Architecture Overview](https://docs.meshery.io/concepts): Core logic on models, relationships, and registry components.
