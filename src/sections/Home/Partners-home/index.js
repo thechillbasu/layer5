@@ -32,7 +32,7 @@ const LazyPartnerImage = ({ partner }) => {
       className="partner-image"
       id={partner.name}
       loading="lazy"
-      src={partner.imageSrc}
+      src={partner.imageLink}
       alt={partner.name}
       width={partner.imageWidth}
       height={partner.imageHeight}
