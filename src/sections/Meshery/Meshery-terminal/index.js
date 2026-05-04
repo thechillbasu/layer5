@@ -15,9 +15,7 @@ import GKE from "../Meshery-platforms/supported-icons/gke.svg";
 import Docker from "../Meshery-platforms/supported-icons/docker.svg";
 import ImageHub from "../../../assets/images/image-hub/layer5-image-hub.svg";
 import SMP from "../../../assets/images/service-mesh-performance/icon/smp-dark.svg";
-
 const OAM = "/images/partners/oam.svg";
-
 const MesheryTerminal = () => {
   return (
     <MesheryWrapper>

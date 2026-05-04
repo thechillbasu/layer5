@@ -12,7 +12,6 @@ import { ReactComponent as Envoy } from "../../../assets/images/service-mesh-ico
 import { ReactComponent as OSM } from "../../../assets/images/service-mesh-icons/open-service-mesh/stacked/color/openservicemesh-stacked-colorMode.svg";
 import { ReactComponent as SMP } from "../../../assets/images/service-mesh-performance/horizontal/smp-colorMode.svg";
 import { ReactComponent as SMI } from "../../../assets/images/service-mesh-icons/service-mesh-interface/horizontal-stackedtext/color/servicemeshinterface-horizontal-stackedtext-colorMode.svg";
-
 const CNCF = "/images/partners/cncf/horizontal/color/cncf-colorMode.svg";
 const OAM = "/images/partners/oam-colorMode.svg";
 

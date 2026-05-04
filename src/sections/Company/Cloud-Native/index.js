@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../../../reusecore/Button";
 import CloudNativeWrapper from "./cloud-native.style";
-
 const cncf = "/images/partners/cncf-stacked-white-color.svg";
 
 const CloudNativeLeaders = () => {
